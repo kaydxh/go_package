@@ -1,0 +1,11 @@
+<seelog minlevel="debug" maxlevel="error">
+
+    <outputs formatid="main">
+        <buffered size="10000" flushperiod="1000">
+            <rollingfile type="size" filename="./log/info.log" maxsize="100000000" maxrolls="30"/>
+        </buffered>
+    </outputs>
+    <formats>
+        <format id="main" format="%Date %Time %Ns [%Level] %File:%Line [%Msg]%n"/>
+    </formats>
+</seelog>
